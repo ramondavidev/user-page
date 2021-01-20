@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 </head>
 <body>
     
@@ -28,9 +29,9 @@
             <span style="color: #929289;" class="or"> ou </span>
         </div>
         <div class="flex-header">
-            <button class="nav-item-page nav-item-left">1º Sem.</button>
-            <button class="nav-item-page nav-item-middle">2º Sem.</button>
-            <button class="nav-item-page nav-item-right">3º Sem.</button>
+            <button class="nav-item-page nav-item-left">1º Ano</button>
+            <button class="nav-item-page nav-item-middle">2º Ano</button>
+            <button class="nav-item-page nav-item-right">3º Ano</button>
         </div>
     </div>
 
@@ -131,9 +132,9 @@
                 <div style="font-weight: 900;">Visão de Pilares</div>
                 <div style="font-weight: 300;">consolidade</div>
             </div>
-            <div style="display: flex; justify-content: center;">
+            <div style="display: flex; justify-content: center; margin-right: 20px;">
                 <div>
-                    <canvas id="myChartPilares" width="321" height="321" style="display: block; width: 321px; height: 321px;" class="chartjs-render-monitor"></canvas>
+                    <canvas id="pie-chart5" width="460" height="460""></canvas>
                 </div>
             </div>
         </div>
@@ -243,7 +244,7 @@
         <div class="border-3"></div>
         <div class="graph-info">
             <div>
-                <canvas id="myChartExecucao" width="341" height="341" class="chartjs-render-monitor" style="display: block; width: 341px; height: 341px;"></canvas>
+                <canvas id="pie-chart4" width="460" height="460""></canvas>
             </div>
         </div>
     </div>
@@ -275,7 +276,7 @@
         <div class="border-3"></div>
         <div class="graph-info">
             <div>
-                <canvas id="myChartComunicacao" width="341" height="341" class="chartjs-render-monitor" style="display: block; width: 341px; height: 341px;"></canvas>
+                <canvas id="pie-chart3" width="460" height="460""></canvas>
             </div>
         </div>
     </div>
@@ -307,7 +308,7 @@
         <div class="border-3"></div>
         <div class="graph-info">
             <div>
-                <canvas id="myChartPropriedade" width="341" height="341" class="chartjs-render-monitor" style="display: block; width: 341px; height: 341px;"></canvas>
+                <canvas id="pie-chart2" width="460" height="460""></canvas>
             </div>
         </div>
     </div>
@@ -338,22 +339,15 @@
             </div>
         </div>
         <div class="border-3"></div>
-        <div class="graph-info">
+        <div>
             <div>
-                <canvas id="myChartInfluencia" width="341" height="341" class="chartjs-render-monitor" style="display: block; width: 341px; height: 341px;"></canvas>
+                <canvas id="pie-chart" width="460" height="460"></canvas>
             </div>
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.4/bluebird.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css">
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
     
     <script src="./index.js"></script>
 </body>

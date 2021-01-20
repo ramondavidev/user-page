@@ -5,11 +5,11 @@ body {
 
 .container-ev {
     display: grid;
-    height: 800px;
-    width: 96vw;
+    height: 850px;
+    width: 96%;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1.3fr;
-    grid-template-rows: 85px 85px 85px 85px 1fr 1fr 1fr 1fr;
+    grid-template-rows: 90px 90px 97px 97px 1fr 1fr 1fr 1fr;
     grid-template-areas: 
         "perfil-info perfil-info general-evaluation form"
         "perfil-info perfil-info general-evaluation form"
@@ -27,7 +27,7 @@ body {
     .container-ev {
         height: 1800px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 630px 85px 85px 85px 85px 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 630px 90px 90px 97px 97px 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "form form" 
             "perfil-info perfil-info"
@@ -42,13 +42,16 @@ body {
             "graph graph "
             ;
     }
+    .general-evaluation-footer {
+        margin-top: 27px !important;
+    }
 }
 
 @media only screen and (max-width: 650px) {
     .container-ev {
         height: 2200px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 630px 85px 85px 85px 85px 85px 85px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 630px 90px 90px 90px 90px 97px 97px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "form form" 
             "perfil-info perfil-info"
@@ -511,6 +514,14 @@ body {
     grid-area: graph;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
     color: #606060;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.graph-info {
+    display: flex;
+    justify-content: space-between;
 }
 
 .text-test {
@@ -521,7 +532,7 @@ body {
 
 
 .info-graph {
-    width: 96vw;
+    width: 96%;
     margin: 16px auto;
     padding-bottom: 14px;
     background-color: #F2F2F2;
@@ -548,17 +559,22 @@ body {
 }
 
 #myChartExecucao {
-    min-width: 361px;
+    min-width: 350px;
 }
 
 #myChartComunicacao {
-    min-width: 361px;
+    min-width: 350px;
 }
 
 #myChartPropriedade {
-    min-width: 361px;
+    min-width: 350px;
 }
 
 #myChartInfluencia {
-    min-width: 361px;
+    min-width: 350px;
 }
+
+#myChartPilares {
+    min-width: 400px;
+}
+
