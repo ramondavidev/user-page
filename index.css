@@ -514,9 +514,14 @@ body {
     grid-area: graph;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
     color: #606060;
+    
+}
+
+.cont-graph {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 800px;
 }
 
 .graph-info {
