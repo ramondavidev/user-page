@@ -2,6 +2,14 @@ body, table, th, tr {
     font-family: 'Roboto', sans-serif;
 }
 
+.title-list-page {
+  display: flex;
+  margin-left: 3vw;
+  margin-top: 20px;
+  color: #666666;
+  font-size: 24px;
+}
+
 .card {
     background-color: #F2F2F2;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.25);
@@ -33,7 +41,7 @@ tr, th, table {
 
   table {
     border-collapse: separate !important;
-    border-spacing: 0 15px !important;
+    border-spacing: 0 8px !important;
   }
 
   .table-header {
@@ -90,3 +98,87 @@ tr, th, table {
     font-size: 14px;
 
   }
+
+  .header-page {
+    display: flex;
+    justify-content: space-around;
+    max-width: 950px;
+    margin: 30px auto;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .header-page {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .flex-header {
+        margin-top: 10px;
+    }
+    .or {
+        display: none;
+    }
+}
+
+
+
+.flex-header {
+    display: flex;
+}
+
+.btn-arrow {
+    border: 1px solid #5C5C5C;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex-inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.year-page {
+    color: #848484;
+    font-size: 24px;
+    margin: 0 8px;
+}
+
+.nav-item-page {
+    margin: 0;
+    height: 35px;
+    width: 84px;
+    border: none;
+    box-sizing: border-box;
+    color: #5C5C5C;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.nav-item-left {
+    border: 1px solid #5C5C5C;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.nav-item-right {
+    border-top: 1px solid #5C5C5C;
+    border-bottom: 1px solid #5C5C5C;
+    border-right: 1px solid #5C5C5C;
+    border-radius: 0px 6px 6px 0px;
+}
+
+.nav-item-middle {
+    border-top: 1px solid #5C5C5C;
+    border-bottom: 1px solid #5C5C5C;
+    border-right: 1px solid #5C5C5C;
+    border-radius: 0;
+}
+
+.activate-btn {
+  background-color: #B3AEF9 !important;
+  color: #3125D3 !important;
+}
