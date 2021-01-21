@@ -110,7 +110,7 @@ body {
     background-color: #ffffff;
     font-size: 16px;
     font-weight: 800;
-    display: flex-inline;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
